@@ -1,44 +1,99 @@
-<!-- 
-- Uma lista com 3 projetos fictícios.
-- Cada item deve ter nome, descrição e link (pode ser #).
--->
-
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projetos</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+        text-align: center;
+        margin: 0;
+        padding: 20px;
+      }
+      .container-centered {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+      .retangular-section {
+        border-radius: 40px;
+        padding: 40px;
+        width: 40%;
+        max-width: 400px;
+        min-height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        border: 2px solid #333;
+        background-color: #fff;
+        font-weight: 600;
+        text-decoration: none;
+        color: #333;
+        transition: all 0.3s ease;
+        box-shadow: 6px 6px 0px rgba(0, 0, 0, 1);
+        margin: 10px;
+        padding-left: 20px;
+      }
+      .retangular-section:hover {
+        box-shadow: 8px 8px 0px rgba(0, 0, 0, 1);
+        transform: translate(-2px, -2px);
+      }
+      .retangular-section p {
+        text-align: justify;
+      }
+      .retangular-section h3 {
+        align-self: flex-start;
+        margin-bottom: 10px;
+      }
+      a {
+        display: inline-block;
+        margin-top: 20px;
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+      li {
+        margin-bottom: 20px;
+      }
+    </style>
   </head>
   <body>
-    <h2>Projetos</h2>
-    <ul>
-      <li>
+    <div class="container-centered">
+      <h1>Projetos</h1>
+      <section class="retangular-section">
         <h3>To-Do Master</h3>
         <p>
           Um aplicativo intuitivo para gerenciamento de tarefas diárias,
           permitindo categorização e notificações personalizadas.
         </p>
         <a href="#">Ver projeto</a>
-      </li>
-      <li>
+      </section>
+      <section class="retangular-section">
         <h3>Food Explorer</h3>
         <p>
           Plataforma para descobrir novos restaurantes, avaliar pratos e
           compartilhar experiências gastronômicas.
         </p>
         <a href="#">Ver projeto</a>
-      </li>
-      <li>
+      </section>
+      <section class="retangular-section">
         <h3>Portfólio Criativo</h3>
         <p>
           Um site moderno e responsivo para apresentar trabalhos de design e
           desenvolvimento, destacando habilidades e experiências.
         </p>
         <a href="#">Ver projeto</a>
-      </li>
-    </ul>
-
-    <a href="/01_index.html">Voltar para a página inicial</a>
+      </section>
+      <a href="/01_index.html">Voltar para a página inicial</a>
+    </div>
   </body>
 </html>

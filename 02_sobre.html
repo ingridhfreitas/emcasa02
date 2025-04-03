@@ -1,77 +1,119 @@
-<!-- 
-- Contém uma tabela com dados pessoais (nome, idade, cidade).
-- Currículo com seções de Experiência, Educação e Habilidades (utilize listas).
-- Rodapé com texto: “Referências disponíveis mediante solicitação.” 
--->
-
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About me</title>
+    <title>Sobre Mim</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+        text-align: center;
+        margin: 0;
+        padding: 20px;
+      }
+      .container-centered {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+      .retangular-section {
+        border-radius: 40px;
+        padding: 40px;
+        width: 40%;
+        max-width: 400px;
+        min-height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid #333;
+        background-color: #fff;
+        font-weight: 600;
+        text-decoration: none;
+        color: #333;
+        transition: all 0.3s ease;
+        box-shadow: 6px 6px 0px rgba(0, 0, 0, 1);
+        margin: 10px;
+      }
+      .retangular-section:hover {
+        box-shadow: 8px 8px 0px rgba(0, 0, 0, 1);
+        transform: translate(-2px, -2px);
+      }
+      .retangular-section p {
+        text-align: justify;
+      }
+      table {
+        border-collapse: collapse;
+        width: 50%;
+        margin: 20px auto;
+      }
+      th,
+      td {
+        border: 1px solid #333;
+        padding: 10px;
+      }
+      th {
+        background-color: #ddd;
+      }
+      a {
+        display: inline-block;
+        margin-top: 20px;
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+      }
+      footer {
+        margin-top: 20px;
+      }
+    </style>
   </head>
   <body>
-    <table border="1">
-      <tr>
-        <th>Nome</th>
-        <th>Idade</th>
-        <th>Cidade</th>
-        <th>Telefone</th>
-      </tr>
-      <tr>
-        <td>Ingrid Freitas</td>
-        <td>34 anos</td>
-        <td>João Pessoa, Paraíba</td>
-        <td>+55 (83) 99801-2711</td>
-      </tr>
-    </table>
+    <div class="container-centered">
+      <h1>Sobre Mim</h1>
+      <table>
+        <tr>
+          <th>Nome</th>
+          <th>Idade</th>
+          <th>Cidade</th>
+          <th>Telefone</th>
+        </tr>
+        <tr>
+          <td>Ingrid Freitas</td>
+          <td>34 anos</td>
+          <td>João Pessoa, Paraíba</td>
+          <td>+55 (83) 99801-2711</td>
+        </tr>
+      </table>
 
-    <section>
-      <h2>Experiência</h2>
-      <ul>
-        <li>
-          Lorem ipsum dolor sit amet Magnam blanditiis qui neque earum, nisi
-          quam aut fugiat incidunt, ipsam reiciendis consequatur voluptatibus
-          laudantium adipisci doloremque dolorum recusandae. Ea, molestiae
-          corporis.
-        </li>
-        <li>Consectetur adipisicing elit.</li>
-        <li>Laudantium adipisci doloremque dolorum recusandae.</li>
-      </ul>
-    </section>
-    <section>
-      <h2>Educação</h2>
-      <ul>
-        <li>
-          Lorem ipsum dolor sit amet Magnam blanditiis qui neque earum, nisi
-          quam aut fugiat incidunt, ipsam reiciendis consequatur voluptatibus
-          laudantium adipisci doloremque dolorum recusandae. Ea, molestiae
-          corporis.
-        </li>
-        <li>Consectetur adipisicing elit.</li>
-        <li>Laudantium adipisci doloremque dolorum recusandae.</li>
-      </ul>
-    </section>
-    <section>
-      <h2>Habilidades</h2>
-      <ul>
-        <li>
-          Lorem ipsum dolor sit amet Magnam blanditiis qui neque earum, nisi
-          quam aut fugiat incidunt, ipsam reiciendis consequatur voluptatibus
-          laudantium adipisci doloremque dolorum recusandae. Ea, molestiae
-          corporis.
-        </li>
-        <li>Consectetur adipisicing elit.</li>
-        <li>Laudantium adipisci doloremque dolorum recusandae.</li>
-      </ul>
-    </section>
-    <br />
+      <section class="retangular-section">
+        <h2>Experiência</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </section>
 
-    <a href="/01_index.html">Voltar para a página inicial</a>
+      <section class="retangular-section">
+        <h2>Educação</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </section>
 
-    <br />
+      <section class="retangular-section">
+        <h2>Habilidades</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </section>
 
-    <footer>Referências disponíveis mediante solicitação.</footer>
+      <a href="/01_index.html">Voltar para a página inicial</a>
+      <footer>Referências disponíveis mediante solicitação.</footer>
+    </div>
   </body>
 </html>
