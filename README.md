@@ -1,4 +1,4 @@
-# Projeto Fullstack - Página Pessoal
+# Projeto Minisite - Página Pessoal
 
 Este repositório contém um projeto desenvolvido como parte do meu curso Fullstack. O objetivo é construir uma página pessoal utilizando HTML, CSS e Bootstrap, aplicando conceitos modernos de design e responsividade.
 
@@ -10,8 +10,13 @@ Este repositório contém um projeto desenvolvido como parte do meu curso Fullst
 
 ## Estrutura do Projeto
 
-- `index.html`: Estrutura principal da página
-- `styles.css`: Estilização customizada
+`index.html` - Página inicial do currículo.
+
+`about.html` - Página com informações pessoais e experiência profissional.
+
+`projects.html` - Lista de projetos desenvolvidos.
+
+`contact.html` - Formulário para contato.
 
 ## Objetivo
 
